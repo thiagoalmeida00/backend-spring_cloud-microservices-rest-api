@@ -1,2 +1,14 @@
-# backend-spring_cloud-microservices-rest-api
-Projeto acadêmico desenvolvido na disciplina de Arquitetura de Software - Spring Cloud, microservices, REST API - Equipe: Thiago Almeida e Thiago Azevedo.
+# Spring Cloud | Microservices | REST API
+
+Projeto Spring Cloud utilizando arquitetura de microserviços apresentando API Gateway, Service Discovery (Eureka), REST API para cada ms, além de documentação com Swagger.
+
+## Implementações
+
+* Conceitos de Spring Cloud;
+* Microserviços;
+* API Gateway;
+* Service Discovery (Eureka);
+* REST API;
+* Swagger.
+
+**Nota: Projeto desenvolvido com objetivo de aplicar os conhecimentos adquiridos na disciplina de Arquitetura de Software do curso de Sistemas de Informação da UNIFACISA.**
