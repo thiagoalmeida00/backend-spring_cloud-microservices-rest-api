@@ -1,0 +1,29 @@
+spring:
+   application:
+      name: gateway-service
+
+   cloud:
+      gateway:
+         routes:
+         - id: contaCorrenteModule
+           uri: lb://contaCorrente-microservice
+           predicates:
+           - Path=/contaCorrente/**
+
+         - id : contaPoupancaModule
+           uri: lb://contaPoupanca-microservice
+           predicates:
+           - Path=/contaPoupanca/**
+
+         - id : clienteModule
+           uri: lb://cliente-microservice
+           predicates:
+           - Path=/cliente/**
+
+server:
+   port: 8001
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka

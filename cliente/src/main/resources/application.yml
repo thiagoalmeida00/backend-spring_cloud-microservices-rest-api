@@ -1,0 +1,26 @@
+spring:
+   application:
+      name: cliente-microservice
+   datasource:
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/Banco-Arquitetura-p1
+      username: postgres
+      password: 1234
+      driver-class-name: org.postgresql.Driver
+   jpa:
+      database: POSTGRESQL
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+
+server:
+   port: 8083
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+
+
+
+
